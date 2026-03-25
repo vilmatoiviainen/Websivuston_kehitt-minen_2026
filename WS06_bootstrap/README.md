@@ -1,0 +1,1 @@
+Tämä on työpaja ws06 bootstrap kansio

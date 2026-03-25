@@ -1,0 +1,1 @@
+Tämä on työpaja WS05 responsive design kansio
