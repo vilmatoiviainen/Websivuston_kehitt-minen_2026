@@ -1,0 +1,100 @@
+/* CSS styles for the webpage */
+/*sivun runko: asetetaan taustaväri ja fonttiperhe, maksimileveys ja automaattiset marginaalit*/
+body {
+    background-color:burlywood;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*Otsikko: asetetaan väri, fonttikoko ja varjostus*/
+h1 {
+    color: #412c01;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/*kappaleteksti: keskikokoinen vaaleanruskea teksti*/
+p {
+    color: #5c4033;
+    font-size: 1.2em;
+}
+/*kuva: pyöristetyt kulmat, keskitetty nettisivuille, musta reunus*/
+img {
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #000;
+}
+/*linkki: suurempi fonttikoko, valkoinen, ei alleviivausta, hover-efekti, tummennettu, suurennettu*/
+a { 
+    color: #e7e7e7;
+    text-decoration: none;
+    font-size: 1.2em;   
+}
+a:hover {
+    background-color: #5c4033;
+    color: #fff;
+    font-size: 1.2em;
+}       
+/*järjestetty lista: lista keskelle, vaaleanruskea teksti, normaali fonttikoko, pyöristetyt reunat, valkoinen tausta, varjostus*/
+ol {
+    list-style-position: inside;
+    color: #5c4033;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}  
+/*lomake: keskitetty, teksti keskitetty, vaaleanruskea teksti, normaali fonttikoko, pyöristetyt reunat, valkoinen tausta, varjostus*/
+form {
+    max-width: 300px;
+    margin: 15px auto;
+    text-align: center; 
+    color: #5c4033;
+    font-size: 1em;
+    border-radius: 100px;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}   
+/*lomakkeen syötekentät: keskitetty suhteessa valkoiseen taustaan, leveä, pyöristetyt reunat, vaaleanruskea tausta, musta teksti, varjostus*/
+input[type="text"], input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5dc;
+    color: #000;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}       
+
+/*lomakkeen lähetyspainike: keskitetty, leveä, pyöristetyt reunat, vaaleanruskea tausta, musta teksti, varjostus, hover-efekti*/
+input[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5dc;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}      
+/*taulukko: otsikot vasemmalle, keskitetty, leveä, pyöristetyt reunat, vaaleanruskea tausta, musta teksti, varjostus*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}           
+table th {
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}   
