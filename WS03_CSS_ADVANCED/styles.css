@@ -1,0 +1,159 @@
+/* CSS styles for the webpage */
+/*sivun runko: asetetaan taustaväri ja fonttiperhe, maksimileveys ja automaattiset marginaalit*/
+body {
+    background-color:burlywood;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*Otsikko: asetetaan väri, fonttikoko ja varjostus*/
+h1 {
+    color: #412c01;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/*kappaleteksti: keskikokoinen vaaleanruskea teksti*/
+p {
+    color: #5c4033;
+    font-size: 1.2em;
+}
+/*kuva: pyöristetyt kulmat, keskitetty nettisivuille, musta reunus*/
+img {
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #000;
+}
+
+/*filter-image: mustavalkoinen filtteri, joka poistuu kun nuoli viedään kuvan päälle*/
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}       
+.filter-image:hover {
+    filter: grayscale(0%);
+}   
+
+/*quote: ensimmäinen kirjain isompi, vaaleanruskea teksti, normaali fonttikoko, pyöristetyt reunat, valkoinen tausta, varjostus*/
+blockquote {
+    font-size: 1em;
+    color: #5c4033;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}   
+blockquote::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4e1f1f;
+}   
+
+/*animoitu banneri joka liikkuu vasemmalta oikealle jatkuvana, vaaleanruskea tausta, musta teksti, pyöristetyt reunat, varjostus*/
+.banner {   
+    background-color: #f5f5dc;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    animation: moveBanner 10s linear infinite;
+}
+
+@keyframes moveBanner {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}   
+
+/*linkki: suurempi fonttikoko, valkoinen, ei alleviivausta, hover-efekti, tummennettu, suurennettu*/
+a { 
+    color: #e7e7e7;
+    text-decoration: none;
+    font-size: 1.2em;   
+}
+a:hover {
+    background-color: #5c4033;
+    color: #fff;
+    font-size: 1.2em;
+}       
+/*järjestetty lista: lista keskelle, vaaleanruskea teksti, normaali fonttikoko, pyöristetyt reunat, valkoinen tausta, varjostus*/
+ol {
+    list-style-position: inside;
+    color: #5c4033;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}  
+
+/*pseudo-list: taustaväri tummempi ensimmäiselle listan kohdalle, vaaleanruskea teksti, normaali fonttikoko, pyöristetyt reunat, valkoinen tausta, varjostus*/
+.pseudo-list li:first-child {   
+    background-color: #e7e7e7;
+}   
+
+/*lomake: keskitetty, teksti keskitetty, vaaleanruskea teksti, normaali fonttikoko, pyöristetyt reunat, valkoinen tausta, varjostus*/
+form {
+    max-width: 300px;
+    margin: 15px auto;
+    text-align: center; 
+    color: #5c4033;
+    font-size: 1em;
+    border-radius: 100px;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}   
+/*lomakkeen syötekentät: keskitetty suhteessa valkoiseen taustaan, leveä, pyöristetyt reunat, vaaleanruskea tausta, musta teksti, varjostus*/
+input[type="text"], input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5dc;
+    color: #000;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}       
+
+/*lomakkeen lähetyspainike: keskitetty, leveä, pyöristetyt reunat, vaaleanruskea tausta, musta teksti, varjostus, hover-efekti*/
+input[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5dc;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}      
+
+/* Lähetyspainikkeen hover-efekti: tummennettu, suurennettu, varjostus*/
+input[type="submit"]:hover {    
+    background-color: #5c4033;
+    color: #fff;
+    font-size: 1.1em;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}   
+
+/*taulukko: otsikot vasemmalle, keskitetty, leveä, pyöristetyt reunat, vaaleanruskea tausta, musta teksti, varjostus*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}           
+table th {
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}   
