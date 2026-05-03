@@ -1,7 +1,21 @@
-/* navbarin taustaväri on beige */      
-.navbar {
-  background-color: rgb(176, 176, 150);
-}   ¨
-body {
-  background-color: lime !important;
+/*headerin taustaväri on beige*/
+header {
+    background-color: rgb(224, 224, 197);
+} 
+
+/*p elementti on keskitetty ja fontti on arial*/
+p {
+    text-align: center;
+    font-family: arial;
 }
+
+/* p elementin marginaali on oikealle ja vasemmalle 50px ja jaa teksti kahteen riviin*/
+p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*main taustaväri on beige*/
+main {
+    background-color: rgb(224, 224, 197);
+} 
