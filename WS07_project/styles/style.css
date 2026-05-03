@@ -1,0 +1,7 @@
+/* navbarin taustaväri on beige */      
+.navbar {
+  background-color: rgb(176, 176, 150);
+}   ¨
+body {
+  background-color: lime !important;
+}
