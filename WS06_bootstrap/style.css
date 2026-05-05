@@ -1,0 +1,25 @@
+/* sivun taustaväri on vaaleanpunainen */
+body {
+    background-color: #ffe4e1;
+}
+
+/*keskitäään header elementti ja fontti on arial*/
+header {
+    text-align: center;
+    font-family: arial;
+}
+
+/*keskitetään nav elementti ja fontti on arial*/
+nav {
+    text-align: center;
+    font-family: arial;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*keskitetään body elementti ja fontti on arial*/
+body {
+    text-align: center;
+    font-family: arial;
+}
+
