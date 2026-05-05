@@ -1,21 +1,289 @@
 /*headerin taustaväri on beige*/
 header {
-    background-color: rgb(224, 224, 197);
+    background-color: #e4e2dd;
 } 
 
 /*p elementti on keskitetty ja fontti on arial*/
 p {
     text-align: center;
-    font-family: arial;
+    font-family: arial cursive;
+    
 }
 
-/* p elementin marginaali on oikealle ja vasemmalle 50px ja jaa teksti kahteen riviin*/
-p {
+.esittely {
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 100px;
     margin-right: 100px;
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    color: #514b47;
+
+    @media (max-width: 600px) {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
 }
+
+/*p elementissä on marginaali ylhäällä 20px ja vasemmalla ja oikealla 100px, fontti on 20px ja teksti on keskitetty*/   
+
+p {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+        @media (max-width: 600px) {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+}
+
+/*p elementissä on ylhäällä ja alhaalla 20px marginaali, vasemmalla ja oikealla 100px marginaali, fontti on 20px ja teksti on keskitetty*/
 
 /*main taustaväri on beige*/
 main {
-    background-color: rgb(224, 224, 197);
+    background-color: #e4e2dd;
 } 
+.container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+
+  @media (max-width: 600px) {
+    height: auto;
+  }
+}
+
+/*kuva on läpikuultava*/
+.hoitola {
+  opacity: 0.8;
+}
+
+/*tekstien kirjain välistys on 2px*/
+.teksti {
+  letter-spacing: 5px;
+}
+
+.teksti2 {
+  letter-spacing: 5px;
+}
+
+/*läpikuultava tausta tekstille*/
+.teksti {
+  background-color: rgba(0, 0, 0, 0.5);
+}   
+
+.teksti {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-family: montserrat;
+  font-size: 40px;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+}
+
+/*teksti2 on teksti elementin alla ja keskitetty, sama fontti ja taustaväri kuin teksti elementissä*/
+.teksti2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-family: montserrat;
+  font-size: 40px;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }     
+
+  background-color: rgba(0, 0, 0, 0.5);
+}       
+
+/*teksti3 on teksti2 elementin alla ja keskitetty, sama fontti ja taustaväri kuin teksti elementissä*/
+.teksti3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-family: montserrat;
+  font-size: 40px;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }     
+
+  background-color: rgba(0, 0, 0, 0.5);
+}   
+
+.teksti3 { letter-spacing: 5px;}
+
+.navbar {
+    align-items: center;
+}
+
+/* lashbox tekstin fontti on Dream avenue*/
+.navbar-brand {
+    font-family: Dream Avenue;
+    font-size: 30px;
+    letter-spacing: 2px;
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+    }   
+}   
+
+
+.navbar-brand {
+    margin-left: 60px;
+}   
+
+/*keskitä nav-link elementit koko sivulle*/
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/*ajanvaraus elementti on keskitetty teksti3 elementin alla*/
+.ajanvaraus {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*ajanvaraus elementissä on hover joka muuttaa taustavärin valkoiseksi ja tekstin mustaksi*/
+.ajanvaraus a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/*ajanvaraus elementissä on pyöristetyt kulmat ja ruskea taustaväri sekä valkoinen teksti, musta reunat reunat*/
+.ajanvaraus a { 
+  background-color: #796a5f;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: arial;
+
+  @media (max-width: 600px) {
+    padding: 10px 15px;
+    font-size: 16px;
+  }     
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 100px;   
+  margin-right: 100px;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+.card h2 {
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*card elementtien p elementissä on marginaali ylhäällä 10px, vasemmalla ja oikealla 20px, fontti on 16px ja teksti on keskitetty*/
+.card p {   
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: start;
+  font-family: arial;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 50px;
+  margin-inline-start: 200px;
+  margin-inline-end: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*carousel kuvat on leveydeltään 200px ja korkeudeltaan 150px, kuvat on pyöristetty kulmista*/
+.carousel img {
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+.Hinnasto a { 
+  background-color: #796a5f;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: arial;
+
+  @media (max-width: 600px) {
+    padding: 10px 15px;
+    font-size: 16px;
+  }     
+}
+
+.Hinnasto  a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.Hinnasto {
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 3px;
+}
+
+/*keskitä Hinnasto elementti*/
+.Hinnasto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
