@@ -23,7 +23,7 @@ p {
     @media (max-width: 600px) {
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
@@ -60,9 +60,11 @@ main {
   height: auto;
 
   @media (max-width: 600px) {
+    width:200%;
     height: auto;
   }
 }
+
 
 /*kuva on läpikuultava*/
 .hoitola {
@@ -287,3 +289,30 @@ margin-bottom: 3px;
   margin-bottom: 3px;
 }
 
+/*yhteystiedot elementissä on marginaali ylhäällä 20px, vasemmalla ja oikealla 100px, fontti on 20px ja teksti on keskitetty*/
+.yhteystiedot {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+  }     
+}
+
+.copyright {
+  text-align: center;
+  font-size: 8cqmax;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: arial;
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }     
+}
