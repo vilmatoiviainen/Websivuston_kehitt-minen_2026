@@ -23,7 +23,7 @@ p {
     @media (max-width: 600px) {
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
@@ -55,6 +55,8 @@ main {
   
 }
 
+
+/*hoitolakuva näkyy mobiiliversiossa sivun leveyden mukaan leikattuna*/
 .container img {
   width: 100%;
   height: auto;
@@ -64,7 +66,6 @@ main {
     height: auto;
   }
 }
-
 
 /*kuva on läpikuultava*/
 .hoitola {
@@ -206,7 +207,9 @@ main {
   margin-right: 100px;
 
   @media (max-width: 600px) {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    margin-left: 10px;
+        margin-right: 10px;
   }
 }
 
@@ -216,6 +219,10 @@ main {
   border-radius: 16px;
   text-align: center;
   font-size: 16px;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
 }
 
 /*card elementtien p elementissä on marginaali ylhäällä 10px, vasemmalla ja oikealla 20px, fontti on 16px ja teksti on keskitetty*/
@@ -226,6 +233,12 @@ main {
   font-size: 14px;
   text-align: start;
   font-family: arial;
+
+    @media (max-width: 600px) {
+        font-size: 9px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 .carousel {
@@ -237,6 +250,12 @@ main {
   margin-inline-end: 200px;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+  }
 }
 
 /*carousel kuvat on leveydeltään 200px ja korkeudeltaan 150px, kuvat on pyöristetty kulmista*/
@@ -247,7 +266,7 @@ main {
 
   @media (max-width: 600px) {
     width: 150px;
-    height: 100px;
+    height: auto;
   }
 }
 
@@ -315,4 +334,38 @@ margin-bottom: 3px;
   @media (max-width: 600px) {
     font-size: 12px;
   }     
+}
+
+iframe {
+  width: 700px;
+  height: 300px;
+  border: none;
+
+  @media (max-width: 600px) {
+    height: 100px;
+  }
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-family: arial;
+}
+
+/*footer sivun alareunaan*/
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.ajanvaraus1 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #e4e2dd;
 }
