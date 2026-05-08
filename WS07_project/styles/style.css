@@ -23,7 +23,7 @@ p {
     @media (max-width: 600px) {
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 13px;
+        font-size: 16px;
     }
 }
 
@@ -62,8 +62,8 @@ main {
   height: auto;
 
   @media (max-width: 600px) {
-    width:200%;
-    height: auto;
+    width: 200%;
+margin-left: -50%;
   }
 }
 
@@ -198,13 +198,15 @@ main {
   }     
 }
 
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 10px;
+  gap: 5px;
   margin-top: 20px;
   margin-left: 100px;   
   margin-right: 100px;
+  justify-content: center;
 
   @media (max-width: 600px) {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -265,7 +267,7 @@ main {
   align-items: center;
 
   @media (max-width: 600px) {
-    width: 150px;
+    width: 200px;
     height: auto;
   }
 }
@@ -308,25 +310,10 @@ margin-bottom: 3px;
   margin-bottom: 3px;
 }
 
-/*yhteystiedot elementissä on marginaali ylhäällä 20px, vasemmalla ja oikealla 100px, fontti on 20px ja teksti on keskitetty*/
-.yhteystiedot {
-  margin-top: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
-  font-size: 20px;
-  text-align: center;
-  justify-content: center;
-
-  @media (max-width: 600px) {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 16px;
-  }     
-}
 
 .copyright {
   text-align: center;
-  font-size: 8cqmax;
+  font-size: 14px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: arial;
@@ -337,12 +324,15 @@ margin-bottom: 3px;
 }
 
 iframe {
-  width: 700px;
+margin-left: 250px;
+  width: 800px;
   height: 300px;
   border: none;
 
   @media (max-width: 600px) {
-    height: 100px;
+    height: 60px;
+    margin-left: 5px;
+    width: 99%;
   }
 }
 
@@ -353,19 +343,35 @@ footer {
   font-family: arial;
 }
 
-/*footer sivun alareunaan*/
-footer {
+footer {        
   position: static;
   left: 0;
   bottom: 0;
   width: 100%;
 }
 
-.ajanvaraus1 {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.text-center {
   text-align: center;
-  background-color: #e4e2dd;
+  font-family: arial;
+  font-size: 12px;
+  margin-top: 0%;
+  margin-bottom: 20px;
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }     
+}
+
+h1 {
+padding: 20px;
+  text-align: center;
+  font-family: montserrat;
+  font-size: 40px;
+  color: #514b47;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }     
 }
