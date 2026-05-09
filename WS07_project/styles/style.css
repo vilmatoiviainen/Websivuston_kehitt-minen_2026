@@ -202,7 +202,7 @@ margin-left: -50%;
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 5px;
+  gap: 2px;
   margin-top: 20px;
   margin-left: 100px;   
   margin-right: 100px;
@@ -219,11 +219,16 @@ margin-left: -50%;
   padding: 10px;
   background: #f8f8f8;
   border-radius: 16px;
-  text-align: center;
+  text-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
   font-size: 16px;
 
   @media (max-width: 600px) {
     font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;  
+    text-align: start;
   }
 }
 
@@ -242,6 +247,7 @@ margin-left: -50%;
         margin-right: 5px;
     }
 }
+
 
 .carousel {
   display: flex;
@@ -402,7 +408,9 @@ h2 {
   font-family: arial;
 
   @media (max-width: 600px) {
-    font-size: 10px;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
