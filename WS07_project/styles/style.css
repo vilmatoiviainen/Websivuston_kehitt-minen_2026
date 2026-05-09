@@ -83,7 +83,7 @@ margin-left: -50%;
 
 /*läpikuultava tausta tekstille*/
 .teksti {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(67, 67, 67, 0.5);
 }   
 
 .teksti {
@@ -116,7 +116,7 @@ margin-left: -50%;
     font-size: 20px;
   }     
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(67, 67, 67, 0.5);
 }       
 
 /*teksti3 on teksti2 elementin alla ja keskitetty, sama fontti ja taustaväri kuin teksti elementissä*/
@@ -134,7 +134,7 @@ margin-left: -50%;
     font-size: 20px;
   }     
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(67, 67, 67, 0.5);
 }   
 
 .teksti3 { letter-spacing: 5px;}
@@ -374,4 +374,61 @@ padding: 20px;
   @media (max-width: 600px) {
     font-size: 20px;
   }     
+}
+
+.hinnastolist {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: 30%;
+  text-align: start;
+  font-family: arial;
+  font-size: 16px;
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }     
+}
+
+h2 {
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 16px;
+  text-align: start;
+  margin-left: 30%;
+  margin-right: 20%;
+  font-size: 14px;
+  font-family: arial;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
+}
+
+/*varaukset elementti samanlainen kuin ajanvarauselementti*/
+.varaukset a {
+  background-color: #796a5f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: arial;
+  margin-left: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: 600px) {
+    padding: 10px 15px;
+    font-size: 16px;
+  }     
+}
+
+/*varaukset elementti hover joka muuttaa taustavärin valkoiseksi ja tekstin mustaksi*/
+.varaukset a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
