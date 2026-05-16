@@ -43,8 +43,6 @@ p {
         }
 }
 
-/*p elementissä on ylhäällä ja alhaalla 20px marginaali, vasemmalla ja oikealla 100px marginaali, fontti on 20px ja teksti on keskitetty*/
-
 /*main taustaväri on beige*/
 main {
     background-color: #e4e2dd;
@@ -114,10 +112,9 @@ margin-left: -50%;
 
   @media (max-width: 600px) {
     font-size: 20px;
-  }     
-
+  }  
   background-color: rgba(67, 67, 67, 0.5);
-}       
+}
 
 /*teksti3 on teksti2 elementin alla ja keskitetty, sama fontti ja taustaväri kuin teksti elementissä*/
 .teksti3 {
@@ -133,14 +130,13 @@ margin-left: -50%;
   @media (max-width: 600px) {
     font-size: 20px;
   }     
-
   background-color: rgba(67, 67, 67, 0.5);
-}   
+}
 
 .teksti3 { letter-spacing: 5px;}
 
 .navbar {
-    align-items: center;
+align-items: center;
 }
 
 /* lashbox tekstin fontti on Dream avenue*/
@@ -151,9 +147,8 @@ margin-left: -50%;
 
     @media (max-width: 600px) {
         font-size: 20px;
-    }   
-}   
-
+    }
+}
 
 .navbar-brand {
     margin-left: 60px;
@@ -195,9 +190,8 @@ margin-left: -50%;
   @media (max-width: 600px) {
     padding: 10px 15px;
     font-size: 16px;
-  }     
+  }
 }
-
 
 .cards {
   display: grid;
@@ -232,7 +226,6 @@ margin-left: -50%;
   }
 }
 
-/*card elementtien p elementissä on marginaali ylhäällä 10px, vasemmalla ja oikealla 20px, fontti on 16px ja teksti on keskitetty*/
 .card p {   
   margin-top: 10px;
   margin-left: 10px;
@@ -247,7 +240,6 @@ margin-left: -50%;
         margin-right: 5px;
     }
 }
-
 
 .carousel {
   display: flex;
@@ -291,7 +283,7 @@ margin-left: -50%;
   @media (max-width: 600px) {
     padding: 10px 15px;
     font-size: 16px;
-  }     
+  }
 }
 
 .Hinnasto  a:hover {
@@ -326,11 +318,11 @@ margin-bottom: 3px;
 
   @media (max-width: 600px) {
     font-size: 12px;
-  }     
+  }
 }
 
 iframe {
-margin-left: 250px;
+margin-left: 20px;
   width: 800px;
   height: 300px;
   border: none;
@@ -367,7 +359,7 @@ footer {
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
-  }     
+  }
 }
 
 h1 {
@@ -379,7 +371,7 @@ padding: 20px;
 
   @media (max-width: 600px) {
     font-size: 20px;
-  }     
+  }
 }
 
 .hinnastolist {
@@ -394,7 +386,7 @@ padding: 20px;
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
-  }     
+  }
 }
 
 h2 {
