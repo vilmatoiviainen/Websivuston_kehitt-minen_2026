@@ -234,9 +234,8 @@ align-items: center;
   font-size: 14px;
   text-align: start;
   font-family: arial;
-}
 
-    @media (max-width: 600px) { .card p {
+    @media (max-width: 600px) { 
         font-size: 9px;
         margin-left: 5px;
         margin-right: 5px;
@@ -282,9 +281,8 @@ align-items: center;
   text-decoration: none;
   font-size: 20px;
   font-family: arial;
-}
 
-  @media (max-width: 600px) { .Hinnasto a {
+  @media (max-width: 600px) { 
     padding: 10px 15px;
     font-size: 16px;
   }
@@ -319,36 +317,33 @@ margin-bottom: 3px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: arial;
-}
 
-  @media (max-width: 600px) { .copyright {
+  @media (max-width: 600px) {
     font-size: 12px;
   }
   }
 
-.iframe {
+iframe {
 margin-left: 220px;
   width: 800px;
   height: 300px;
   border: none;
-}
 
-  @media (max-width: 600px) { .iframe {
+  @media (max-width: 600px) { 
     height: 60px; 
     margin-left: 5px;
     width: 99%;
   }
 }
 
-.footer {
+footer {
   background-color: #ffffff;
   padding: 15px;
   text-align: center;
   font-family: arial;      
   position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+ margin-left: 100%;
+width: 100%;
 }
 
 .text-center {
@@ -386,13 +381,13 @@ padding: 20px;
   text-align: start;
   font-family: arial;
   font-size: 16px;
-}
 
-  @media (max-width: 600px) { .hinnastolist {
+  @media (max-width: 600px) { 
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
   }
+}
 
 h2 {
   padding: 10px;
