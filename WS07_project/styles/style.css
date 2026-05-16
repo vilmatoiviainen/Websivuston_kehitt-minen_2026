@@ -342,8 +342,7 @@ footer {
   text-align: center;
   font-family: arial;      
   position: static;
- margin-left: 100%;
-width: 100%;
+ width: 100%
 }
 
 .text-center {
