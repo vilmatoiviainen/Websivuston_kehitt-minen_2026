@@ -36,7 +36,7 @@ p {
     text-align: center;
     justify-content: center;
 }
-        @media (max-width: 600px) { .p {
+        @media (max-width: 600px) { p {
             margin-left: 20px;
             margin-right: 20px;
             font-size: 16px;
@@ -59,8 +59,9 @@ main {
 .container img {
   width: 100%;
   height: auto;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .container img {
     width: 200%;
 margin-left: -50%;
   }
@@ -94,8 +95,9 @@ margin-left: -50%;
   font-family: montserrat;
   font-size: 40px;
   text-align: center;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .teksti {
     font-size: 20px;
   }
 }
@@ -110,11 +112,13 @@ margin-left: -50%;
   font-family: montserrat;
   font-size: 40px;
   text-align: center;
-
-  @media (max-width: 600px) {
-    font-size: 20px;
-  }  
   background-color: rgba(67, 67, 67, 0.5);
+}
+
+  @media (max-width: 600px) { .teksti2 {
+    font-size: 20px;
+  background-color: rgba(67, 67, 67, 0.5);
+  }
 }
 
 /*teksti3 on teksti2 elementin alla ja keskitetty, sama fontti ja taustaväri kuin teksti elementissä*/
@@ -127,11 +131,13 @@ margin-left: -50%;
   font-family: montserrat;
   font-size: 40px;
   text-align: center;
+    background-color: rgba(67, 67, 67, 0.5);
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .teksti3 {
     font-size: 20px;
-  }     
   background-color: rgba(67, 67, 67, 0.5);
+  }
 }
 
 .teksti3 { letter-spacing: 5px;}
@@ -145,8 +151,8 @@ align-items: center;
     font-family: Dream Avenue;
     font-size: 30px;
     letter-spacing: 2px;
-
-    @media (max-width: 600px) {
+}
+    @media (max-width: 600px) { .navbar-brand {
         font-size: 20px;
     }
 }
@@ -187,8 +193,9 @@ align-items: center;
   text-decoration: none;
   font-size: 20px;
   font-family: arial;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .ajanvaraus a {
     padding: 10px 15px;
     font-size: 16px;
   }
@@ -202,8 +209,9 @@ align-items: center;
   margin-left: 100px;   
   margin-right: 100px;
   justify-content: center;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .cards {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     margin-left: 10px;
         margin-right: 10px;
@@ -218,8 +226,9 @@ align-items: center;
     margin-left: 10px;
     margin-right: 10px;
   font-size: 16px;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .card h2 {
     font-size: 10px;
     margin-left: 2px;
     margin-right: 5px;  
@@ -234,8 +243,9 @@ align-items: center;
   font-size: 14px;
   text-align: start;
   font-family: arial;
+}
 
-    @media (max-width: 600px) { 
+    @media (max-width: 600px) { .card p {
         font-size: 9px;
         margin-left: 5px;
         margin-right: 5px;
@@ -265,8 +275,9 @@ align-items: center;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .carousel img {
     width: 200px;
     height: auto;
   }
@@ -281,8 +292,9 @@ align-items: center;
   text-decoration: none;
   font-size: 20px;
   font-family: arial;
+}
 
-  @media (max-width: 600px) { 
+  @media (max-width: 600px) { .Hinnasto a {
     padding: 10px 15px;
     font-size: 16px;
   }
@@ -317,8 +329,9 @@ margin-bottom: 3px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: arial;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .copyright {
     font-size: 12px;
   }
   }
@@ -328,8 +341,9 @@ margin-left: 220px;
   width: 800px;
   height: 300px;
   border: none;
+}
 
-  @media (max-width: 600px) { 
+  @media (max-width: 600px) { iframe {
     height: 60px; 
     margin-left: 5px;
     width: 99%;
@@ -368,7 +382,7 @@ padding: 20px;
   color: #514b47;
 }
 
-  @media (max-width: 600px) { .h1 {
+  @media (max-width: 600px) { h1 {
     font-size: 20px;
   }
 }
@@ -380,8 +394,9 @@ padding: 20px;
   text-align: start;
   font-family: arial;
   font-size: 16px;
+}
 
-  @media (max-width: 600px) { 
+  @media (max-width: 600px) { .hinnastolist {
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
@@ -399,7 +414,7 @@ h2 {
   font-family: arial;
 }
 
-  @media (max-width: 600px) { .h2 {
+  @media (max-width: 600px) { h2 {
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
@@ -419,8 +434,9 @@ h2 {
   margin-left: 40%;
   margin-top: 30px;
   margin-bottom: 30px;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .varaukset a {
     padding: 10px 15px;
     font-size: 16px;
   }     
@@ -459,8 +475,9 @@ h2 {
   margin-left: 350px;   
   margin-right: 100px;
   justify-content: center;
+}
 
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { .card.mb-3 {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     image {
       width: 100%;
